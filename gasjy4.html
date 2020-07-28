@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+		<meta http-equiv="Cache" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>微喂苍穹,实时看得见的健康呼吸</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="dist/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="themes/icon.css">
+		<link rel="stylesheet" href="css/gasjy4.css" />
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/jquery.easyui.min.js"></script>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/url.js"></script>
+		<script src="js/gasjy4.js?v=2.1.0"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div  class="main_top">
+				<div class="main_left lf">
+					<p>设备详情</p>
+					<div class="deviceDetail lf">
+						<p>
+							<span>所属单位:</span>
+							<span></span>
+						</p>
+						<p>
+							<span>设备编号:</span>
+							<span></span>
+						</p>
+						<p>
+							<span>设备位置:</span>
+							<span></span>
+						</p>
+					</div>
+					<div class="deviceImg lf">
+						<img src="" alt="" />
+						<span></span>
+					</div>
+					<p class="deviceTime clear">
+						<span class="lf"></span>
+						<span class="lf"></span>
+						<span class="lf"></span>
+					</p>
+					<div class="devicePowerInfo">
+						<div class="routeSelection">
+							<span class="lf">类型选择:</span>
+							<form class="layui-form lf" action="">
+							   <select class="layui-input-inline" lay-filter="line">
+							            
+							    </select>	
+							</form>
+						</div>
+						<div class="routerWrap">
+							<div class="routeData">
+								<p class="lf"><span>温度:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>湿度:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>PM2.5:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>PM10:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>二氧化碳:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>甲醛:</span><span></span></p>
+							</div>
+							<div class="routeData">
+								<p class="lf"><span>挥发性有机物:</span><span></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_right lf">
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="test">
+						<span>日期</span>
+						<span>日</span>
+					</div>
+					<div id="gasjyCurrentChart" class="gasjyCurrentChart lf"></div>
+				</div>
+			</div>
+			<div  class="main_bottom clear">
+				<div class="powerAlarmHistory">
+					<p>
+						<span>超标记录</span>
+						<!--<label for="PM2.5">
+							<input type="checkbox" value="PM2.5" id="PM2.5" checked/>
+							<span>PM2.5</span>
+						</label>
+						<label for="PM10">
+							<input type="checkbox" value="PM10" id="PM10" checked/>
+							<span>PM10</span>
+						</label>
+						<label for="co2">
+							<input type="checkbox" value="co2" id="co2" checked/>
+							<span>二氧化碳</span>
+						</label>
+						<label for="ch2o">
+							<input type="checkbox" value="ch2o" id="ch2o" checked/>
+							<span>甲醛</span>
+						</label>
+						<label for="tvoc">
+							<input type="checkbox" value="tvoc" id="tvoc" checked/>
+							<span>挥发性有机物</span>
+						</label>-->
+					</p>
+					<ul>
+						<li>超标时间</li>
+						<li>类型</li>	
+						<li>值</li>
+					</ul>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<script src="dist/layui.all.js"></script>
+	</body>
+</html>

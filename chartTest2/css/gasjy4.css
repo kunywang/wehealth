@@ -1,0 +1,102 @@
+html,body{
+	background:#0C1E32;
+	color:#fff;
+	opacity:1
+}
+.container{
+	width:100%;
+	height:100%;
+	font-size:14px;
+	margin:0;	
+	padding:0;
+}
+.title>p:nth-child(1){
+	background:#000;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	font-size:1.2em;
+	font-weight: bold;
+	color:#fff;
+}
+
+.gasjyTop{
+	width:70%;
+	float:left;
+}
+.gasjyLevel{
+	width:30%;
+	height:100px;
+	float:right;
+	margin-top:30px;
+}
+.gasjyLevel>p{
+	text-align:center;
+	margin-bottom:0;
+}
+.gasjyLevel>p>img{
+	width:80px;
+	height:80px;
+	padding:5px;
+	background:#fff;
+	border-radius: 5px;
+	border:2px solid #000;
+}
+.gasjyLevel>p>span{
+	font-size:1.4em;
+}
+
+.gasjyTop>p{
+	text-indent:10px;
+}
+
+
+.gasjyTop>h1{
+	font-size:20px;
+	font-weight: bold;
+	margin-top:0;
+	line-height:24px;
+	text-indent:10px;
+	color:#1AB394;
+}
+.gasjyNav{
+	width:100%;
+	overflow: hidden;
+}
+.container>.gasjyNav>.selectCls{
+	background:#fff;
+	color:#000;
+}
+.gasjyNav>div{
+	float:left;
+	width:23%;
+	height:136px;
+	box-sizing: border-box;
+	border:1px solid #fff;
+	border-radius: 4px;
+	margin:1%;
+	overflow-y: hidden;
+}
+.gasjyNav>div>img{
+	float:left;
+	width:80%;
+	height:60px;
+	margin:10px 10%;
+}
+.gasjyNav>div>span{
+	float:left;
+	width:100%;
+	height:27px;
+	line-height:27px;
+	text-align: center;
+	font-size:0.9em;
+}
+.gasjyNav>div>span:nth-child(3){
+	background:#003c71;
+	border-radius: 0 0 4px 4px;
+	color:#fff;
+}
+.gasjyBottom>div{
+	width:100%;
+	height:240px;
+}

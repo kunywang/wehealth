@@ -1,0 +1,232 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body,.container{
+	width:100%;
+	height:100%;
+	background:#0C1E32;
+	color:#fff;
+	
+}
+.main_top{
+	width:100%;
+	overflow-y:hidden ;
+}
+.lf{
+	float:left;
+}
+.lr{
+	float:left;
+}
+.clear{
+	clear:both;
+}
+.main_left,
+.main_right{
+	height:100%;
+	padding:0 10px;
+	box-sizing: border-box;
+	margin:10px 10px 0 10px;
+}
+.main_left{
+	width:480px;
+}
+.main_left>p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+}
+.main_left>p:nth-child(1){
+	font-weight: bold;
+	font-size:18px;
+}
+.main_left>.deviceDetail{
+	width:320px;
+	overflow: hidden;
+}
+.main_left>.deviceDetail>p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+}
+.main_left>.deviceImg{
+	width:138px;
+}
+.main_left>.deviceImg>img{
+	width:80px;
+	height:80px;
+}
+.main_left>.deviceImg>span{
+	display: block;
+	width:80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.main_left>.deviceTime>span:nth-child(1),
+.main_left>.deviceTime>span:nth-child(3)
+{
+	width:270px;
+	border:1px solid #ccc;
+	margin-top:20px;
+}
+.main_left>.deviceTime>span:nth-child(2){
+	width:160px;
+	height:40px;
+	text-align:center;
+}
+.main_left>.deviceTime>span:nth-child(3){
+	width:24px;
+}
+.devicePowerInfo>.routeSelection{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	
+}
+.devicePowerInfo>.routeSelection>form{
+	margin:0  10px;
+}
+.layui-form-select dl dd{
+	color:#000;
+}
+
+.layui-layer-dialog .layui-layer-content{
+	color:#000;
+}
+.layui-layer-dialog .layui-layer-content>i{
+	margin-top:10px;
+}
+
+.routerWrap>.routeData {
+	width:100%;
+	height:40px;
+	line-height:40px;
+}
+.routerWrap>.routeData>p{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	margin:0;
+}
+.routerWrap>.routeData>p>span:nth-child(2){
+	margin-left:10px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.main_right{
+	width:calc(100% - 520px);	
+	height:100%;
+}
+.main_right>div{
+	width:100%;
+	height:500px;
+}
+.main_right>div:nth-child(1){
+	float:right;
+	width:100%;
+	height:36px;
+	line-height:36px;
+}
+.main_right>div:nth-child(1)>span,
+.main_right>div:nth-child(1)>input{
+	float:right;
+	width:200px;
+}
+.main_right>div:nth-child(1)>input{
+	margin-right:40px;
+}
+.main_right>div:nth-child(1)>span:nth-child(2){
+	width:34px;
+	color:#fff;
+	margin:0 10px;
+	font-size:14px;
+	border-radius: 2px;
+}
+.main_right>div:nth-child(1)>span:nth-child(3){
+	width:36px;
+	height:36px;
+	border-radius:50%;
+	background:#5FB878;
+	text-align: center;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.main_bottom{
+	width:calc(100% - 50px);
+	height:calc(100% - 546px);
+	
+	margin:0px 20px;
+}
+.powerAlarmHistory{
+	width:100%;
+	height:100%;
+}
+
+
+.powerAlarmHistory>p{
+	height:36px;
+	line-height:36px;
+	
+}
+.powerAlarmHistory>p>span{
+	font-size:16px;
+	font-weight: bold;
+}
+
+.powerAlarmHistory>p>label{
+	float:right;
+	margin-left:10px;
+}
+.powerAlarmHistory>p>label>input{
+	float:left;
+	margin-top:13px;
+	margin-right:5px;
+}
+.powerAlarmHistory>p>label>span{
+	float:left;
+	
+}
+
+
+.powerAlarmHistory>div{
+	height:calc(100% - 77px);
+	overflow-y: auto;
+}
+
+.powerAlarmHistory>div::-webkit-scrollbar{ /* 滚动条整体部分 */
+	width:0px;
+	margin-right:2px
+}
+
+
+.powerAlarmHistory>ul,.powerAlarmHistory>div>ul{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #303a5e;
+}
+.powerAlarmHistory>ul>li,.powerAlarmHistory>div>ul>li{
+	float:left;
+	width:20%;
+	height:40px;
+	
+	text-align: center;
+	font-size:14px;
+}
+.powerAlarmHistory>div>ul>li>span{
+	float:left;
+	border-radius: 100px;
+	width:100%;
+	height:24px;
+	background:#409EFF;
+	margin-top:8px;
+}

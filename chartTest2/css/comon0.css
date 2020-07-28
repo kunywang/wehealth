@@ -1,0 +1,439 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	border:0;
+	text-decoration: none;
+	list-style: none;
+}
+/***/
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	background: #000d4a url(../images/bg.jpg) center top;
+    background-size: cover;
+    color: #666;
+    font-family: "微软雅黑";
+}
+/*头信息 */
+.head{ 
+	width:100%;
+	height:80px; 
+	background: url(../images/head_bg.png) no-repeat center center; 
+	background-size: 100% 100%; 
+	position: relative;
+	color:#ccc;
+}
+.head>span{
+	float:left;
+	margin:12px 30px;
+	font-size:20px;
+	font-weight: bold;
+	color:green;
+}
+.head>p{
+	width:500px;
+	height:100%;
+	margin:0 auto;
+}
+.head>p>span,.head>p>img{
+	float:left;
+	margin-top:14px;
+}
+.head>p>span{
+	width:100%;
+	height:40px;
+	font-size:30px;
+	margin-top:12px;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+.head>p>img{
+	width:40px;
+	height:40px;
+	margin-left:10px;
+}
+
+.head>div{
+	width:200px;
+	position:absolute;
+	right:20px;
+	top:0;
+	text-align: left;
+	font-size:12px;
+}
+.head>div>img,.head>div>span{
+	float:left;
+}
+.head>div>img{
+	width:24px;
+	height:24px;
+	float:left;
+	margin:16px 10px;
+}
+.head>div>span{
+	display:block;
+	width:100%;
+	color:#ccc;
+	text-align: right;
+}
+.head>div>span:nth-child(1){
+	margin:9px 0px 2px 0px;	
+}
+.head>div>span:nth-child(2){
+	//margin:0 10px;
+}
+/*主题页面*/
+.mainbox{
+	width:100%;
+	height:calc(100% - 80px);
+}
+.mainbox>div:nth-child(1),
+.mainbox>div:nth-child(3)
+{
+	float:left;
+	width:24%;
+	height:calc(100% - 20px);
+	box-sizing: border-box;
+}
+.mainbox>div:nth-child(2){
+	float:left;
+	width:calc(100% - 52%);
+	height:calc(100% - 20px);
+	box-sizing: border-box;	
+}
+.mainbox>div:nth-child(1){
+	margin-left: 1%;
+}
+.mainbox>div:nth-child(2){
+	margin:0px 1%;
+}
+
+.mainbox>div:nth-child(2)>#visualMap{
+	width:calc(100% - 24px);
+	height:calc(100% - 260px);
+	margin:10px;
+	border:2px solid #3EABFF;
+}
+.mainbox>div:nth-child(2)>.stationOnlineAndOnjob{
+	width:calc(100% - 20px);
+	height:232px;
+	margin:10px;
+}
+.mainbox>div:nth-child(2)>.stationOnlineAndOnjob>div{
+	float:left;
+	width:49%;
+	height:100%;
+	box-sizing: border-box;
+	position: relative;
+	background: rgba(255,255,255,.04) url(../images/line.png);
+    background-size: 100% 100%;
+    border: 1px solid rgba(25,186,139,.17);
+    box-shadow: inset 0 0 15px 5px #3EABFF;
+}
+.mainbox>div:nth-child(2)>.stationOnlineAndOnjob>.moveDevice{
+	margin-left:2%;
+}
+.moveDevice>p,.stationDevice>p{
+	width: 90%;
+    height: 36px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    margin-left: 5%;
+}
+
+
+.mainbox>div:nth-child(1)>div,
+.mainbox>div:nth-child(3)>div
+{
+	width:96%;
+	overflow: hidden;
+	margin:10px 2%;
+	position:relative;
+	background: rgba(255,255,255,.04) url(../images/line.png);
+    background-size: 100% 100%;
+    box-sizing: border-box;
+	border: 1px solid rgba(25,186,139,.17);
+	box-shadow: inset 0 0 15px 5px #3EABFF;
+}
+.mainbox>div:nth-child(1)>div:nth-child(3){
+	height:calc(100% - 533px);
+	
+}
+.mainbox>div:nth-child(1)>div>div:nth-child(3){
+	height:calc(100% - 37px);
+}
+.mainbox>div:nth-child(2)>div>div>div:nth-child(3){
+	height:calc(100% - 37px);
+}
+
+.mainbox>div:nth-child(1)>.rollcall{
+	height:260px;
+}
+
+.borderLine>div:first-child:before,
+.borderLine>div:first-child:after,
+.borderLine>div:last-child:before,
+.borderLine>div:last-child:after,
+.borderLine>div:first-child:before,
+.borderLine>div:first-child:after,
+.borderLine>div:last-child:before,
+.borderLine>div:last-child:after
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-top: 2px solid #02a6b5;
+ 
+}
+.borderLine>div:first-child:before
+{
+	border-left: 2px solid #02a6b5;
+	left: 0px;
+	top: 0px;
+}
+.borderLine>div:last-child:before
+{
+	border-top:0;
+	border-bottom: 2px solid #02a6b5;
+	border-left: 2px solid #02a6b5;
+    bottom: 0;
+	left:0px;
+}
+.borderLine>div:first-child:after
+{
+	border-right: 2px solid #02a6b5;   
+	right:0px;
+	top: 0px;
+}
+.borderLine>div:last-child:after
+{
+	border-top:0;
+	border-bottom: 2px solid #02a6b5;
+	border-right: 2px solid #02a6b5;
+    right: 0px;
+    bottom: 0;
+}
+
+.title{
+	width:96%;
+	height:36px;
+	font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height:36px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    margin-left:2%;
+}
+	
+
+.mainbox>div:nth-child(1)>div>ul
+{
+	width:70px;
+	overflow: hidden;
+	margin-left:20px;
+	float:left;
+
+}
+.mainbox>div:nth-child(1)>div>ul>li
+{
+	float:left;
+	font-size:12px;
+	height:70px;
+	text-align: center;
+	background:#62B62F;
+	
+	
+}
+.mainbox>div:nth-child(1)>div>ul>li:nth-child(1),
+.mainbox>div:nth-child(1)>div>ul>li:nth-child(2)
+{
+   width:100%;
+   border-bottom:1px solid rgba(255,255,255,.2);
+   background:#62B62F;
+   margin-top:20px;
+   border-radius: 4px;
+}
+.mainbox>div:nth-child(1)>div>ul>li:nth-child(2){
+	background:#006be4;
+	margin-bottom:5px;
+}
+.mainbox>div:nth-child(1)>div>ul>li>span
+{
+	display:block;
+	line-height:30px;
+	color:#fff;
+	
+}
+.mainbox>div:nth-child(1)>div>ul>li>span:nth-child(1)
+{
+   font-size:24px;
+   margin-top:10px;
+}
+
+.mainbox>div:nth-child(1)>div:nth-child(1)>div:nth-child(4)
+{
+	float:left;
+	width:calc(100% - 110px);
+	height:200px;
+	margin-left:5px;
+}
+
+.mainbox>div:nth-child(3)>div:nth-child(1)>div:nth-child(4){
+	float:left;
+	width:calc(100% - 110px);
+	height:200px;
+	margin-left:5px;
+}
+
+
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul
+{
+	width:70px;
+	overflow: hidden;
+	margin-right:20px;
+	float:right;
+
+}
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li
+{
+	float:left;
+	font-size:12px;
+	height:70px;
+	text-align: center;
+	background:#62B62F;
+	
+	
+}
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li:nth-child(1),
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li:nth-child(2)
+{
+   width:100%;
+   border-bottom:1px solid rgba(255,255,255,.2);
+   background:#62B62F;
+   margin-top:20px;
+   border-radius: 4px;
+}
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li:nth-child(2){
+	background:#006be4;
+	margin-bottom:5px;
+}
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li>span
+{
+	display:block;
+	line-height:30px;
+	color:#fff;
+	
+}
+.mainbox>div:nth-child(3)>div:nth-child(1)>ul>li>span:nth-child(1)
+{
+   font-size:24px;
+   margin-top:10px;
+}
+
+.mainbox>div:nth-child(3)>.alartTotal{
+	height:260px;
+}
+.mainbox>div:nth-child(3)>.alartTotal>#alartInfoTotal{
+	height: calc(100% - 37px);
+}
+.mainbox>div:nth-child(3)>.iotData{
+	height:calc(100% - 533px);
+}
+.mainbox>div:nth-child(3)>.iotData>ul,
+#iotInfoTotal>.iotInfoBox>ul
+{
+	width:100%;
+	overflow: hidden;
+	margin-top:10px;
+}
+.mainbox>div:nth-child(3)>.iotData>ul>li,
+#iotInfoTotal>.iotInfoBox>ul>li
+{
+	float:left;
+	width:16%;
+	height:60px;
+	line-height:60px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	margin-left:1%;
+}
+.mainbox>div:nth-child(3)>.iotData>ul>li:nth-child(1)
+{
+	margin-left:29%;
+}
+.mainbox>div:nth-child(3)>.iotData>ul>li>span
+
+{
+	display: block;
+	height:33px;
+
+	text-align: center;
+	font-size:14px;
+	color:#fff;
+}
+.mainbox>div:nth-child(3)>.iotData>ul>li>span:nth-child(1){
+	line-height:40px;
+	font-size:16px;
+	font-weight: bold;
+}
+.mainbox>div:nth-child(3)>.iotData>ul>li>span:nth-child(2){
+	line-height:23px;	
+}
+#iotInfoTotal{
+	width:100%;
+	height:calc(100% - 37px);
+
+}
+#iotInfoTotal>.iotInfoBox{
+	clear: both;
+	width:100%;
+	height:calc(100% - 66px);
+	overflow-y:auto;
+}
+
+#iotInfoTotal>.iotInfoBox{
+    /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+    -ms-overflow-style:none;
+    /*火狐下隐藏滚动条*/
+    overflow:-moz-scrollbars-none;
+}
+/*Chrome下隐藏滚动条，溢出可以透明滚动*/
+#iotInfoTotal>.iotInfoBox::-webkit-scrollbar{width:0px}
+#iotInfoTotal>.iotInfoBox>ul{margin-top:5px;}
+#iotInfoTotal>.iotInfoBox>ul>li{
+	height:33px;
+	line-height:32px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+#iotInfoTotal>.iotInfoBox>ul>li:nth-child(1){
+	width:24%;
+	margin-left:4%;
+}
+
+#iotInfoTotal>.iotInfoBox>ul:nth-child(1)>li:nth-child(1){
+	background:green;
+}
+#iotInfoTotal>.iotInfoBox>ul:nth-child(2)>li:nth-child(1){
+	background:red;
+}
+#iotInfoTotal>.iotInfoBox>ul:nth-child(3)>li:nth-child(1){
+	background:#006BE4;
+}
+#iotInfoTotal>.iotInfoBox>ul:nth-child(4)>li:nth-child(1){
+	background:green;
+}
+
